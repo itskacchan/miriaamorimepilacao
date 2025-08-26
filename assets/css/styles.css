@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+    /* altura do header */
+}
+
+
+body {
+    background: #faf9f7;
+    color: #131212;
+    line-height: 1.5;
+}
+
+#logo-da-marca {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#cabecalho {
+    background: #eee8e2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    color: #131212;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #704770, #8f5d8d);
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+section {
+    background: #F7EAF6;
+    background: linear-gradient(178deg, rgba(247, 234, 246, 1) 0%, rgba(218, 182, 217, 1) 100%);
+    padding: 50px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    line-height: 4rem;
+}
+
+.botao-agende {
+    width: 230px;
+    height: 60px;
+    background: #8f5d8d;
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    border-radius: 16px;
+    transform: translateZ(0);
+    transition: transform .3s ease, background .2s ease;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.botao-agende a {
+    font-size: 25px;
+    color: #eee8e2;
+}
+
+.botao-agende:hover {
+    transform: scale(1.10);
+}
+
+p {
+    font-family: "Poppins",sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.servicos img {
+    width: 150px;
+    border-radius: 50px;
+}
+
+.contato i {
+    font-size: 25px;
+}
+
+
+.contato a.icon-whatsapp:hover i {
+    color: #25D366;
+    transition: color 0.7;
+}
+
+.rodape {
+    background: #eee8e2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rede-social {
+    margin-top: 15px;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.rede-social a i {
+    font-size: 30px;
+}
+
+h2 {
+    color: #704770;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.conteudo-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.conteudo-servicos p {
+    align-content: center;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+i {
+    color: #704770;
+}
+
+.rede-social a.icon-whatsapp:hover i {
+    color: #25D366;
+    transition: color 0.7s;
+}
+
+.rede-social a.icon-instagram:hover i {
+    color: #E1306C;
+    transition: color 0.7s;
+}
+
+.botao-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1240px) {
+    html {
+        scroll-padding-top: 130px;
+    }
+
+    #logo-da-marca {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .conteudo-servicos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicos h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .conteudo-servicos p {
+        font-size: 30px;
+    }
+
+    .conteudo-servicos img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        margin-top: 30px;
+    }
+
+    .botao-menu {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #eee8e2;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        max-height: 0;
+    }
+
+    .menu.ativo {
+        max-height: 200px;
+    }
+}

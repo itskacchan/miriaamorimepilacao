@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de depilação">
+    <meta name="keywords" content="depilação, estética, pele lisinha, epilação, cera, Miriã Amorim, São Paulo">
+
+    <title>Miriã Amorim Epilação</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/57ed8347cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav class="container navegacao">
+            <img src="./assets/img/Epilação.png" alt="logo de depilação" id="logo-da-marca">
+            <div>
+                <button class="botao-menu"> ☰ </button>
+            </div>
+            <ul class="menu">
+                <li> <a href="#home" class="menu-link">
+                        Home
+                    </a></li>
+                <li> <a href="#sobre" class="menu-link">
+                        Sobre
+                    </a></li>
+                <li><a href="#servicos" class="menu-link">
+                        Serviços
+                    </a></li>
+                <li> <a href="#contato" class="menu-link">
+                        Contato
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Sua pele lisinha e bem cuidada!</h1>
+            <button class="botao-agende"><a href="https://wa.me/5511999701769" target="_blank">
+                  Agende já!
+                </a></button>
+        </div>
+    </section><br>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h1>Sobre</h1>
+            <p>Sou Miriã Amorim, especialista em depilação, e meu propósito é cuidar de cada cliente com atenção e
+                dedicação. Trabalho com produtos de qualidade e prezando sempre pela higiene, para que sua experiência
+                seja tranquila e confortável.</p>
+        </div>
+    </section><br>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h1>Meus Serviços</h1>
+            <h2>Depilação a cera</h2>
+            <div class="conteudo-servicos">
+
+                <p>A depilação com cera é um dos métodos mais eficazes para remover os pelos pela raiz, garantindo uma
+                    pele lisinha e macia por muito mais tempo. Além disso, com o cuidado adequado, o procedimento ajuda
+                    a enfraquecer os pelos ao longo das sessões, proporcionando resultados ainda melhores.</p>
+                <img src="https://i.pinimg.com/736x/32/e6/26/32e6266810c663edb8e888bda6593caa.jpg"
+                    alt="cera em um recipiente como demonstração">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>
+                Agende seu horário pelo WhatsApp <a href="https://wa.me/5511999701769" class="icon-whatsapp"
+                    target="_blank"><i class="fa-brands fa-whatsapp icon-whatsapp"></i></a>
+            </p>
+        </div>
+    </section>
+
+    <footer id="rodape" class="rodape">
+
+        <p>&copy; 2025 Miriã Amorim Epilação - Todos os direitos reservados.</p>
+        <div class="rede-social">
+            <a href="https://wa.me/5511999701769" target="_blank" class="icon-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/miriaamorimdepilacao" class="icon-instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let botao = document.querySelector('.botao-menu')
+    let menu = document.querySelector('.menu')
+
+    botao.addEventListener('click', () => {
+        menu.classList.toggle('ativo')
+    })
+</script>
+
+</html>
